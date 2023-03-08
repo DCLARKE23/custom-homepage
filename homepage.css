@@ -1,7 +1,7 @@
 body {
     background-image: url("background.png");
-    background-repeat: none;
-    background-size: auto;
+    background-repeat: no-repeat;
+    background-size: auto auto;
 }
 
 #search_stuff {
@@ -12,27 +12,33 @@ body {
     margin: auto;
     margin-top: 40px;
     z-index: 100;
+    border: none;
 }
 
 #search_bar {
     height: 40px;
     display: inline-block;
-    width: 85%;
+    width: 83%;
+    vertical-align: top;
     background-color:#eceff4;
     border-radius: 10px 0 0 10px;
     border: none;
     font-size: 18px;
-    width: 85%;
+    width: 83%;
 }
 
 #search_btn {
     background-color: #eceff4;
     font-size: 20px;
     font-family: Symbols Nerd Font Mono;
+    vertical-align: top; 
     color: black;
     height: 40px;
     float: right;
     width: 15%;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    display: inline-block;
 }
 
 #search_btn:focus {
@@ -58,6 +64,7 @@ li {
     height: 100px;
     border-radius: 10px;
     margin: 5px;
+    background-color: #666666;
 }
 
 li:hover {
@@ -73,6 +80,7 @@ li span {
 
 .icon {
     font-family: Symbols Nerd Font Mono;
+    font-size: 32px;
 }
 
 #banner {
